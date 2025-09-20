@@ -1,0 +1,97 @@
+.card {
+  margin: 20px;
+  border: black solid 1px;
+  padding: 20px;
+  width: 150px;
+  min-height: 200px;
+}
+
+.card-id {
+  margin: 20px;
+  border: black solid 1px;
+  padding: 30px;
+  width: 250px;
+  min-height: 320px;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #111111;
+  color: #f5f5f5;
+}
+
+html.dark .card {
+  background-color: #111111;
+  color: #f5f5f5;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.search-button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dark-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: transparent;
+  margin-left: 20px;
+}
+.dark .dark-btn {
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+}
+
+.dark input {
+  background-color: #111111;
+  color: white;
+}
+
+@media (max-width: 418px) {
+  .search-bar {
+    width: 90%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+  }
+
+  .search-bar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar-container {
+    display: flex;
+    justify-content: left;
+    margin: 20px 0;
+  }
+}
